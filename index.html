@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DXXD PIXEL - Professional tech repair services. We Revive It.">
+  <title>DXXD PIXEL | Tech Repair</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #080808;
+      color: #ffffff;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 24px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #222;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 800;
+      letter-spacing: 3px;
+    }
+
+    nav a {
+      color: #aaa;
+      text-decoration: none;
+      margin-left: 28px;
+    }
+
+    nav a:hover {
+      color: white;
+    }
+
+    .hero {
+      min-height: 75vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(48px, 9vw, 100px);
+      letter-spacing: 8px;
+      margin-bottom: 10px;
+    }
+
+    .hero h2 {
+      font-size: clamp(22px, 4vw, 38px);
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      max-width: 650px;
+      color: #aaa;
+      font-size: 18px;
+      margin-bottom: 35px;
+    }
+
+    .button {
+      display: inline-block;
+      background: white;
+      color: black;
+      padding: 15px 30px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      transition: 0.2s;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      background: #ddd;
+    }
+
+    .services {
+      padding: 90px 8%;
+      text-align: center;
+    }
+
+    .services h2 {
+      font-size: 34px;
+      margin-bottom: 45px;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .service {
+      background: #111;
+      border: 1px solid #222;
+      padding: 35px 25px;
+      border-radius: 10px;
+    }
+
+    .service h3 {
+      margin-bottom: 10px;
+    }
+
+    .service p {
+      color: #999;
+    }
+
+    .contact {
+      text-align: center;
+      padding: 100px 20px;
+      background: #0d0d0d;
+    }
+
+    .contact h2 {
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+
+    .contact p {
+      color: #aaa;
+      margin-bottom: 30px;
+    }
+
+    footer {
+      padding: 30px;
+      text-align: center;
+      color: #666;
+      font-size: 14px;
+      border-top: 1px solid #222;
+    }
+
+    @media (max-width: 650px) {
+      nav {
+        display: none;
+      }
+
+      .hero {
+        min-height: 70vh;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">DXXD PIXEL</div>
+
+  <nav>
+    <a href="#services">Repairs</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero">
+    <h1>DXXD PIXEL</h1>
+    <h2>WE REVIVE IT.</h2>
+
+    <p>
+      Professional tech repair with straightforward advice,
+      quality workmanship and convenient collection and return.
+    </p>
+
+    <a class="button" href="#contact">
+      GET A QUOTE
+    </a>
+  </section>
+
+  <section class="services" id="services">
+
+    <h2>TECH REPAIR. SIMPLIFIED.</h2>
+
+    <div class="service-grid">
+
+      <div class="service">
+        <h3>Screen Repair</h3>
+        <p>Cracked or damaged display? We'll get your device looking right again.</p>
+      </div>
+
+      <div class="service">
+        <h3>Battery Replacement</h3>
+        <p>Restore battery life and get more from your device.</p>
+      </div>
+
+      <div class="service">
+        <h3>Diagnostics</h3>
+        <p>Not sure what's wrong? We'll diagnose the problem before recommending a repair.</p>
+      </div>
+
+      <div class="service">
+        <h3>Collection & Return</h3>
+        <p>Convenient repair service without needing to visit a shop.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+
+    <h2>NEED A REPAIR?</h2>
+
+    <p>
+      Message DXXD PIXEL for a quote.
+    </p>
+
+    <a class="button" href="#">
+      MESSAGE US
+    </a>
+
+  </section>
+
+</main>
+
+<footer>
+  © 2026 DXXD PIXEL. All rights reserved.
+</footer>
+
+</body>
+</html>
