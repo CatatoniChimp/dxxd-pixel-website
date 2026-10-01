@@ -483,6 +483,71 @@
       color: var(--muted);
       font-size: 13px;
     }
+
+/* TRUST */
+
+.trust {
+  border-top: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 55px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.trust-item {
+  display: flex;
+  gap: 18px;
+  padding: 30px;
+  border-bottom: 1px solid var(--border);
+}
+
+.trust-item:nth-child(odd) {
+  border-right: 1px solid var(--border);
+}
+
+.trust-item:nth-last-child(-n+2) {
+  border-bottom: none;
+}
+
+.trust-item > span {
+  color: var(--cyan);
+  font-size: 18px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.trust-item h3 {
+  margin: 0 0 8px;
+  font-size: 17px;
+}
+
+.trust-item p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+@media (max-width: 700px) {
+
+  .trust-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .trust-item:nth-child(odd) {
+    border-right: none;
+  }
+
+  .trust-item:nth-last-child(2) {
+    border-bottom: 1px solid var(--border);
+  }
+}
     
     /* FAQ */
 
@@ -1086,6 +1151,79 @@
 
     </div>
 
+  </section>
+
+<!-- TRUST -->
+
+<section class="trust" id="trust">
+  <div class="container">
+
+    <div class="section-heading">
+      <small>Peace of mind</small>
+
+      <h2>
+        YOUR DEVICE.<br>
+        LOOKED AFTER.
+      </h2>
+
+      <p>
+        Straightforward repairs, clear communication and no surprises.
+      </p>
+    </div>
+
+    <div class="trust-grid">
+
+      <div class="trust-item">
+        <span>✓</span>
+        <div>
+          <h3>Clear quote before repair</h3>
+          <p>Know the expected cost before any agreed work begins.</p>
+        </div>
+      </div>
+
+      <div class="trust-item">
+        <span>✓</span>
+        <div>
+          <h3>No work without approval</h3>
+          <p>We won't carry out additional work without speaking to you first.</p>
+        </div>
+      </div>
+
+      <div class="trust-item">
+        <span>✓</span>
+        <div>
+          <h3>Collection & return</h3>
+          <p>Convenient local collection and return across our service areas.</p>
+        </div>
+      </div>
+
+      <div class="trust-item">
+        <span>✓</span>
+        <div>
+          <h3>Quality replacement parts</h3>
+          <p>Parts are selected to provide a dependable repair.</p>
+        </div>
+      </div>
+
+      <div class="trust-item">
+        <span>✓</span>
+        <div>
+          <h3>Tested before return</h3>
+          <p>Repairs are checked before your device is returned.</p>
+        </div>
+      </div>
+
+      <div class="trust-item">
+        <span>✓</span>
+        <div>
+          <h3>Personal service</h3>
+          <p>Deal directly with DXXD PIXEL throughout your repair.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
 </section>
   
   <!-- FAQ -->
